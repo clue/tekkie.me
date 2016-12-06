@@ -1,0 +1,6 @@
+# Composer-specific
+vendor/
+
+# Sculpin-related
+output_dev/
+output_prod/
