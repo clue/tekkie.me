@@ -1,0 +1,17 @@
+{
+  "name": "cv-sculpin-theme",
+  "version": "0.0.1",
+  "description": "Sculpin theme for personal CVs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Georgiana Gligor <gb@tekkie.ro>",
+  "license": "MIT",
+  "repository": "https://github.com/georgiana-gligor/tekkie.me",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
