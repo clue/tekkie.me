@@ -8,3 +8,6 @@ output_prod/
 # UI caches
 source/themes/tekkie/cv/.sass-cache/
 source/themes/tekkie/cv/node_modules/
+
+# IDE settings
+.idea/
