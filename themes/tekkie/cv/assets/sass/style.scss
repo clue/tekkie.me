@@ -1,0 +1,35 @@
+//$family-primary: "Monaco";
+
+@import "../../node_modules/bulma/bulma";
+
+#main-menu {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.footer {
+  padding-bottom: 40px;
+}
+
+.theExperience .card {
+  box-shadow: none;
+  margin-bottom: 15px;
+
+  .level {
+    margin-bottom: 5px;
+
+    .level-item {
+      .title + .subtitle {
+        margin-top: 0px;
+      }
+    }
+  }
+
+}
