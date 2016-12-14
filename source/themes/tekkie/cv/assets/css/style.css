@@ -3880,14 +3880,15 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #00d1b2; }
 
-.inner.social ul {
-  list-style-type: none; }
-  .inner.social ul li {
-    float: left;
-    margin: .5em;
-    font-size: 200%; }
+.footer {
+  padding-bottom: 40px; }
 
-.position ul li {
-  text-align: justify; }
+.theExperience .card {
+  box-shadow: none;
+  margin-bottom: 15px; }
+  .theExperience .card .level {
+    margin-bottom: 5px; }
+    .theExperience .card .level .level-item .title + .subtitle {
+      margin-top: 0px; }
 
 /*# sourceMappingURL=style.css.map */

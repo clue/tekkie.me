@@ -31,11 +31,11 @@
 {% endblock %}
   </head>
 
-  <body>
+  <body{% block body_id %}{% endblock %}{% block body_class %}{% endblock %}>
 {% include "navigation" %}
 
     <div class="section">
-      <div class="container>
+      <div class="container">
         <div class="cover-container">
 
 {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}

@@ -2,23 +2,27 @@
 
 @import "../../node_modules/bulma/bulma";
 
-.inner.social {
-  ul {
-    list-style-type: none;
-
-    li {
-      float: left;
-      margin: .5em;
-      font-size: 200%;
-    }
-  }
+#main-menu {
+  //top: 0;
+  //position: fixed;
 }
 
-.position {
-  ul {
-    li {
-      text-align: justify;
-    }
-  }
+.footer {
+  padding-bottom: 40px;
 }
 
+.theExperience .card {
+  box-shadow: none;
+  margin-bottom: 15px;
+
+  .level {
+    margin-bottom: 5px;
+
+    .level-item {
+      .title + .subtitle {
+        margin-top: 0px;
+      }
+    }
+  }
+
+}
