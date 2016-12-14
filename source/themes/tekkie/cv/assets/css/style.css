@@ -3880,6 +3880,16 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #00d1b2; }
 
+#main-menu {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1001; }
+
+.section {
+  margin-top: 50px; }
+
 .footer {
   padding-bottom: 40px; }
 
