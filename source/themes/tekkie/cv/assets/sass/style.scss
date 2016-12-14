@@ -1,3 +1,7 @@
+//$family-primary: "Monaco";
+
+@import "../../node_modules/bulma/bulma";
+
 .inner.social {
   ul {
     list-style-type: none;
@@ -17,3 +21,4 @@
     }
   }
 }
+

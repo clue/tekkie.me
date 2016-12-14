@@ -2,42 +2,56 @@
 layout: splash
 title: Home
 ---
-<div class="inner cover">
-  <p>
-    <img src="themes/tekkie/cv/assets/GeorgianaGligor.jpg" alt="Georgiana Gligor speaking at ITdays" class="rounded-circle" />
-  </p>
-  <h1 class="cover-heading">{{ site.cover.oneliner }}</h1>
-  <p class="lead">{{ site.cover.lead }}</p>
-{% for item in site.cover.details %}
-  <p>{{ item }}</p>
-{% endfor %}
-  <p class="lead">
-    <a href="#" class="btn btn-lg btn-secondary">Hire Me</a>
-  </p>
-</div>
+<div class="columns is-mobile">
+  <div class="column is-10 is-offset-1">
+  
+<div class="card is-fullwidth">
 
-<div class="inner social">
-  <ul>
+  
+  <div class="card-content">
+    <div class="media">
+        <figure class="media-left">
+          <p class="image is-128x128">
+            <img src="themes/tekkie/cv/assets/GeorgianaGligor.jpg" alt="Georgiana Gligor speaking at ITdays">
+          </p>
+        </figure>
+        
+        <div class="media-content">
+          <h1 class="title is-1">Georgiana Gligor</h1>
+          <h2 class="title is-3">{{ site.cover.oneliner }}</h2>
+        </div>
+    </div>
+    
+    <div class="content">
+      <h3 class="title is-4">{{ site.cover.lead }}</h3>
+{% for item in site.cover.details %}
+      <p>{{ item }}</p>
+{% endfor %}
+    </div>
+  </div>
+  
+  <footer class="card-footer">
+  
 {% if site.social.linkedin %}
-    <li>
-      <a href="https://linkedin.com/in/{{ site.social.linkedin }}">
-        <i class="geek-icon icon ion-social-linkedin"></i>
+      <a class="card-footer-item" href="https://linkedin.com/in/{{ site.social.linkedin }}">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
       </a>
-    </li>
 {% endif %}
 {% if site.social.skype %}
-    <li>
-      <a href="skype:{{ site.social.skype }}?chat">
-        <i class="geek-icon icon ion-social-skype"></i>
+      <a class="card-footer-item" href="skype:{{ site.social.skype }}?chat">
+        <i class="fa fa-skype" aria-hidden="true"></i>
       </a>
-    </li>
 {% endif %}
+
 {% if site.social.facebook %}
-    <li>
-      <a href="https://www.facebook.com/{{ site.social.facebook }}">
-        <i class="geek-icon icon ion-social-facebook"></i>
+      <a class="card-footer-item" href="https://www.facebook.com/{{ site.social.facebook }}">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
       </a>
-    </li>
 {% endif %}
-  </ul>
+  </footer>
+
+</div><!-- .card -->
+
+  </div>
 </div>
+
