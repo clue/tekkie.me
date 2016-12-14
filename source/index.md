@@ -37,6 +37,11 @@ title: Home
         <i class="fa fa-linkedin" aria-hidden="true"></i>
       </a>
 {% endif %}
+{% if site.social.mail %}
+      <a class="card-footer-item" href="mailto:{{ site.social.mail }}">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+{% endif %}
 {% if site.social.skype %}
       <a class="card-footer-item" href="skype:{{ site.social.skype }}?chat">
         <i class="fa fa-skype" aria-hidden="true"></i>
