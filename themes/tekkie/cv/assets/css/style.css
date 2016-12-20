@@ -3893,14 +3893,14 @@ a.panel-block:hover {
 .footer {
   padding-bottom: 40px; }
 
-.theExperience .card {
+.theExperience .card, .theEducation .card {
   box-shadow: none;
   margin-bottom: 15px; }
-  .theExperience .card .level {
+  .theExperience .card .level, .theEducation .card .level {
     margin-bottom: 5px; }
-    .theExperience .card .level .level-item .title + .subtitle {
+    .theExperience .card .level .level-item .title + .subtitle, .theEducation .card .level .level-item .title + .subtitle {
       margin-top: 0px; }
-  .theExperience .card .card-header {
+  .theExperience .card .card-header, .theEducation .card .card-header {
     box-shadow: none;
     border-bottom: 1px solid #ccc; }
 
