@@ -1,0 +1,29 @@
+education:
+  phd:
+    company: Technical University of Cluj-Napoca
+    position: PhD Student
+    since: October 2016
+    location: Cluj-Napoca, Romania
+    details:
+      - Systems Engineering
+      - Artificial Intelligence
+  dipleng:
+    company: Technical University of Cluj-Napoca
+    position: Computer Science Engineer
+    since: 1998
+    until: 2003
+    location: Cluj-Napoca, Romania
+    details:
+      - English-teaching section.
+      - Java.
+      - SQL.
+      - UX/UI.
+  highschool:
+    company: College "Horea, Cloșca și Crișan"
+    position: High-school
+    since: 1994
+    until: 1998
+    location: Alba Iulia, Romania
+    details:
+      - Graduated "Magna cum laudae".
+    
