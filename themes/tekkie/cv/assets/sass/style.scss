@@ -32,4 +32,19 @@
     }
   }
 
+  
+  .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.theSkills .card {
+  box-shadow: none;
+  margin-bottom: 15px;
+  
+  .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+  }
 }

@@ -3900,5 +3900,15 @@ a.panel-block:hover {
     margin-bottom: 5px; }
     .theExperience .card .level .level-item .title + .subtitle {
       margin-top: 0px; }
+  .theExperience .card .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid #ccc; }
+
+.theSkills .card {
+  box-shadow: none;
+  margin-bottom: 15px; }
+  .theSkills .card .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid #ccc; }
 
 /*# sourceMappingURL=style.css.map */
