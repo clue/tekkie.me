@@ -1,0 +1,103 @@
+skills:
+  teamwork:
+    label: Team roles
+    items:
+      -
+        label: Software Architecture
+        value: 95
+      -
+        label: Scrum Master
+        value: 90
+      -
+        label: Product Owner
+        value: 80
+      -
+        label: Mentorship
+        value: 90
+      -
+        label: Standards evangelist
+        value: 100
+  serverside:
+    label: Server-side
+    items:
+      -
+        label: PHP for the web
+        value: 85
+      -
+        label: PHP CLI
+        value: 85
+      -
+        label: node.js
+        value: 50
+  frameworks:
+    label: Frameworks
+    items:
+      -
+        label: Symfony
+        value: 90
+      -
+        label: Silex
+        value: 90
+      -
+        label: Zend framework
+        value: 50
+      -
+        label: CodeIgniter
+        value: 70
+      -
+        label: Kohana
+        value: 80
+      -
+        label: In-house (designed)
+        value: 100
+  clientside:
+    label: Client-side
+    items:
+      -
+        label: Bootstrap
+        value: 80
+      -
+        label: Twig
+        value: 80
+      -
+        label: jQuery
+        value: 85
+      -
+        label: React
+        value: 30
+      -
+        label: CSS
+        value: 80
+      -
+        label: SASS / LESS
+        value: 70
+  versioning:
+    label: Versioning
+    items:
+      -
+        label: Git
+        value: 80
+      -
+        label: SVN
+        value: 70
+      -
+        label: CVS
+        value: 50
+  databases:
+    label: Databases
+    items:
+      -
+        label: CouchDB
+        value: 80
+      -
+        label: MongoDB
+        value: 80
+      -
+        label: MySQL / MariaDB
+        value: 95
+      -
+        label: PostgreSQL
+        value: 85
+      -
+        label: SQL Server
+        value: 70

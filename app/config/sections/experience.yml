@@ -1,0 +1,102 @@
+experience:
+  phd:
+    company: Technical University of Cluj-Napoca
+    position: PhD Student
+    since: October 2016
+    location: Cluj-Napoca, Romania
+    details:
+      - Systems Engineering
+      - Artificial Intelligence
+
+  tekkie:
+    company: Tekkie Consulting
+    position: CTO / Owner
+    since: August 2011
+    location: Alba Iulia, Romania
+    details:
+      - Large-scale application architecture consultancy.
+      - Artificial intelligence products using Watson and Rainbird.
+
+  lola:
+    company: Lola Enterprises
+    position: Principal Developer
+    since: October 2011
+    until: April 2015
+    location: Cluj-Napoca, Romania
+    details:
+      - Kickstarted offshore development technical team focused on developing complex SOA applications with a strong emphasis on performance, both application- and component-level.
+      - Prepared technical architecture of SOA layers, using a LAMP stack backbone.
+      - Mentor developer colleagues to best practices (TDD, continuous integration, BDD, etc).
+      - Design and implement data migration and massaging processes, aimed at large amounts of data.
+      - Ensured smooth integration between backend, frontend and administration components.
+      - Developed backend components.
+      - Occasionally wearing the scrum master hat.
+
+  easytobook:
+    company: Easy To Book GmbH
+    position: Senior Application Developer
+    since: November 2009
+    until: November 2011
+    location: Amsterdam, Netherlands
+    details:
+      - Design and implement multi-tiered applications aimed at allowing people to book hotel rooms from multiple sources.
+      - Optimise performance of public reservations engine.
+      - Design and develop analytics solutions for the marketing team.
+      - Design and develop other internal company applications.
+
+  geoweb:
+    company: GeoWeb Consulting
+    position: LAMP Contractor, co-owner
+    since: August 2009
+    until: December 2010
+    location: London, United Kingdom
+    details:
+      - Design and develop backend applications for various UK customers.
+      - Develop websites using LAMP stack.
+      - Advise strategies to stabilise and improve legacy codebases.
+
+  pfa:
+    company: Beju Georgiana-Ioana PFA
+    position: LAMP contractor
+    location: Timisoara, Romania
+    since: January 2009
+    until: July 2009
+    details:
+      - Implemented a real estate framework which consumes a SOAP API from www.imobiliare.ro to obtain real estate properties and display them in the company’s own website (www.m-imobiliare.ro; www.mix-imobiliare.ro)
+      - PHP, Javascript, HTML, CSS web development
+
+  imobiliare:
+    company: Realmedia Network SRL
+    position: Lead Developer
+    location: Timisoara, Romania
+    since: May 2006
+    until: December 2009
+    details:
+      - Coordinated the technical team for the online software development department.
+      - Established the entire software development process, chose the software tools, decided workflow and responsibilities of team members.
+      - Architected and documented the base framework for development, chose libraries and other development tools, designed structures and code for the individual projects.
+      - Redesigned the entire code base for the new generation of real estate online software provided by imobiliare.ro
+
+  ciao:
+    company: Ciao GmbH
+    position: Developer
+    since: December 2004
+    until: May 2006
+    location: Timisoara, Romania
+    details:
+      - Develop data migration scripts for extremely large amounts of data. Handled the E and T part of a custom ETL solution.
+      - Optimise database access and data extraction, in particular MySQL and Postgresql.
+      - Develop command-line scripts for background tasks.
+      - Develop internal back-office solution.
+
+  iqsolutions:
+    company: IQ Solutions
+    position: Web Developer
+    location: Cluj-Napoca, Romania
+    since: November 2003
+    until: December 2004
+    details:
+      - Develop an employee management and time tracking solution using LAMP stack.
+      - Develop company website.
+      - Elaborate user manuals for the company products.
+      - Develop an inventory management product using MS Access.
