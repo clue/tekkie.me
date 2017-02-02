@@ -1,5 +1,7 @@
 //$family-primary: "Monaco";
 
+$primary: #c9302c;
+
 @import "../../node_modules/bulma/bulma";
 
 #main-menu {
@@ -18,7 +20,7 @@
   padding-bottom: 40px;
 }
 
-.theExperience .card, .theEducation .card {
+.theExperience .card, .theEducation .card, .theSpeaking .card {
   box-shadow: none;
   margin-bottom: 15px;
 
@@ -32,7 +34,6 @@
     }
   }
 
-  
   .card-header {
     box-shadow: none;
     border-bottom: 1px solid #ccc;
@@ -47,4 +48,43 @@
     box-shadow: none;
     border-bottom: 1px solid #ccc;
   }
+}
+
+.card-footer {
+  border-top: none;
+}
+
+/**
+ * talks detail page 
+ */
+body.talk-detail {
+  h1 {
+    font-size: xx-large;
+    margin-bottom: .3em;
+  }
+  
+  h2 {
+    font-size: x-large;
+    margin-bottom: 0;
+  }
+  
+  .tags {
+    margin: 1em 0;
+    
+    .tag {
+      margin: 0 1em 0 0;
+    }
+  }
+  
+  p {
+    text-align: justify;
+  }
+
+  nav.pagination {
+    margin-top: 3rem ;
+  }
+}
+
+.flag-icon.with-text {
+  padding-left: 2rem;
 }
