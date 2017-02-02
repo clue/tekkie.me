@@ -1,0 +1,60 @@
+{% extends "splash.html.twig" %}
+
+{% block body_id %}
+{% if page.shortcode %} id="page-{{ page.shortcode | lower }}"{% endif %}
+{% endblock %}
+
+{% block body_class %} class="talk-detail"{% endblock %}
+
+{% block content_wrapper %}
+<div class="columns is-mobile">
+  <div class="column is-10 is-offset-1">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+
+    <div class="tags">
+      {%- for tag in page.tags -%}
+      <span class="tag is-info">{{ tag }}</span>
+      {%- endfor -%}
+
+      {%- if page.language -%}
+      <span class="flag-icon flag-icon-{{ page.language }} with-text">{{ site.languages[page.language] }}</span>
+      {%- endif -%}
+    </div>
+
+    <div class="content">
+{% block content %}{% endblock %}
+    </div>
+
+
+{% if page.logo %}
+    <div class="conference column is-2">
+      <a href="{{ page.conference.link }}">
+        <img src="{{ page.conference.logo }}" />
+      </a>
+    </div><!-- .conference -->
+{% endif %}
+    <p class="mt-4">{{ page.slides_embed | raw }}</p>
+
+    <nav class="pagination is-centered">
+      <div class="column is-half has-text-left">
+      {%- if page.next_talk -%}
+        <a href="{{ page.next_talk.url }}"
+           class="is-block pagination-previous">
+            &laquo; {{ page.next_talk.conference.name }}
+        </a>
+      {%- endif -%}
+      </div>
+      <div class="column is-half has-text-right">
+      {%- if page.previous_talk -%}
+        <a href="{{ page.previous_talk.url }}"
+           class="is-block pagination-next">
+            {{ page.previous_talk.conference.name }}&raquo;
+        </a>
+      {%- endif -%}
+      </div>
+    </nav>
+
+  </div><!-- .column .is-10 -->
+</div>
+{% endblock %}

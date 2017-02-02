@@ -1,3 +1,17 @@
+
+sculpin_content_types:
+  posts:
+    enabled: false
+  talks:
+    type: path
+    path: _talks
+    singular_name: talk
+    layout: talk
+    enabled: true
+    permalink: talks/:year/:month/:day/:filename/
+    taxonomies:
+      - tags
+
 sculpin:
   permalink: pretty
 sculpin_theme:

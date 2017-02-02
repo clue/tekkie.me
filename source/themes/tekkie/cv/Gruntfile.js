@@ -13,9 +13,18 @@ module.exports = function(grunt) {
 				files: '**/*.scss',
 				tasks: ['sass']
 			}
+		},
+		copy: {
+			main: {
+				files: [
+					{expand: true, cwd: 'node_modules/flag-icon-css', src: ['flags/**'], dest: 'assets/'},
+					{expand: true, cwd: 'node_modules/flag-icon-css', src: ['css/**'], dest: 'assets/'}
+				]
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['watch']);
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.registerTask('default',['watch', 'copy']);
 }

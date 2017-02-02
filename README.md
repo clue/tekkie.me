@@ -17,6 +17,19 @@ $ cd source/themes/tekkie/cv
 $ grunt
 ```
 
+Start the development environment:
+```bash
+$ vendor/bin/sculpin generate --watch --server
+```
+
+## Packaging
+
+Ensure vendor info is packed into the distribution:
+```bash
+$ cd source/themes/tekkie/cv
+$ grunt copy
+```
+
 ## External Resources
 
-* [Cover template for Bootstrap4](https://v4-alpha.getbootstrap.com/examples/cover/)
+* [Bulma frontend framework](http://bulma.io/)
