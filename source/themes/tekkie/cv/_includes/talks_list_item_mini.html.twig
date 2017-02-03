@@ -1,0 +1,18 @@
+<div class="is-fullwidth talk-mini">
+
+    <h2 class="title is-block is-marginless is-4"><a href="{{ talk.url }}">{{ talk.title }}</a></h2>
+    <nav class="level card-header">
+        <div class="level-left">
+            <div class="level-item">
+                <h3 class="subtitle is-6"> @ {{ talk.conference.name }}</h3>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item has-text-right">
+                <div class="is-6">{{ talk.location }}</div>
+                <div class="is-6">{{ talk.date|date("F jS, Y") }}</div>
+            </div>
+        </div>
+    </nav>
+
+</div><!-- .card -->

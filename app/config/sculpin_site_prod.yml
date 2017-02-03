@@ -1,3 +1,33 @@
+title: Georgiana Gligor
+subtitle: Large-scale Software Architect. PhD student.
+
+author: Georgiana Gligor
+description: Online Curriculum Vitae of Georgiana Gligor
+
+imports:
+    - sections/experience.yml
+    - sections/education.yml
+    - sections/skills.yml
+    - sections/references.yml
+
+cover:
+  oneliner: Geek. Mother. Do-er.
+  lead: >
+    Application architect that enjoys crafting efficient large-scale solutions.
+
+  details:
+    - After using PHP for more than a decade, I'm a living proof that geek girls are an asset to any team. I love taming the Force of the DevOps dark side and mentoring team mates in achieving craftsmanship.
+    - Over the past year I dived deep into Artificial Intelligence, using Watson and Rainbird to deliver real-life applications. This also led me into starting a PhD in Systems Engineering.
+
+social:
+  skype: georgiana.beju
+  facebook: gbtekkie
+  linkedin: gbtekkie
+  mail: gb@tekkie.ro
+
+languages:
+  ro: Romanian
+  gb: English
 
 analytics:
-  google: UA-2511156-11XXXXXXXXXXXXXXXXX
+  google: UA-2511156-11

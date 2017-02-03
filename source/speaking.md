@@ -8,38 +8,31 @@ use:
   - talks
 ---
 
+{% set now = 'now' | date_modify('-2 day') | date('U') %}
+{% set forFuture = true %}
+{% set forPast = true %}
+
+<section>
 {% for talk in data.talks %}
-<div class="card box is-fullwidth">
+    {% if talk.date >= now %}
+        {% if forFuture %}
+    <header class="notification has-text-centered">
+        <h1 class="title">Coming Up Next</h1>
+        <p class="subtitle">Where I will be speaking in the future.</p>
+    </header>
+            {% set forFuture = false %}
+        {% endif %}
+{% include 'talks_list_item_mini' %}
+    {% else %}
+        {% if forPast %}
+    <header class="notification has-text-centered">
+        <h1 class="title">Past Events</h1>
+        <p class="subtitle">Slides available for each talk.</p>
+    </header>
+            {% set forPast = false %}
+        {% endif %}
+{% include 'talks_list_item' %}
+    {% endif %}
 
-<h2 class="title is-block is-marginless"><a href="{{ talk.url }}">{{ talk.title }}</a></h2>
-<nav class="level card-header">
-  <div class="level-left">
-    <div class="level-item">
-      <h3 class="subtitle is-6"> @ {{ talk.conference.name }}</h3>
-    </div>
-  </div>
-  <div class="level-right">
-    <div class="level-item has-text-right">
-      <div class="is-6">{{ talk.location }}</div>
-      <div class="is-6">{{ talk.date|date("F jS, Y") }}</div>
-    </div>
-  </div>
-</nav>
-
-<div class="card-content">
-{{ talk.description }}
-</div><!-- .card-content -->
-
-<footer class="card-footer">
-    <div class="tags">
-{% for tag in talk.tags %}
-  <span class="tag is-light is-small">{{ tag }}</span>
 {% endfor %}
-      {%- if talk.language -%}
-      <span class="flag-icon flag-icon-{{ talk.language }} with-text">{{ site.languages[talk.language] }}</span>
-      {%- endif -%}
-    </div>
-</footer>
-
-</div><!-- .card -->
-{% endfor %}
+</section>

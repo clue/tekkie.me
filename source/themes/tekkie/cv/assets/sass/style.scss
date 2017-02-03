@@ -24,6 +24,7 @@ $primary: #c9302c;
   box-shadow: none;
   margin-bottom: 15px;
 
+
   .level {
     margin-bottom: 5px;
 
@@ -32,12 +33,32 @@ $primary: #c9302c;
         margin-top: 0px;
       }
     }
+
   }
 
+  .box-header {
+    border-bottom: 1px solid #ccc;
+    //border-top: 1px solid #ccc;
+  }
   .card-header {
     box-shadow: none;
     border-bottom: 1px solid #ccc;
   }
+}
+
+.theExperience, .theEducation {
+  .card.box {
+    padding: 20px 0;
+  }
+}
+
+.theSpeaking .talk-mini {
+    margin-bottom: 1rem;
+
+    .card-header {
+      border: none;
+      box-shadow: none;
+    }
 }
 
 .theSkills .card {
