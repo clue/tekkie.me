@@ -3900,9 +3900,20 @@ a.panel-block:hover {
     margin-bottom: 5px; }
     .theExperience .card .level .level-item .title + .subtitle, .theEducation .card .level .level-item .title + .subtitle, .theSpeaking .card .level .level-item .title + .subtitle {
       margin-top: 0px; }
+  .theExperience .card .box-header, .theEducation .card .box-header, .theSpeaking .card .box-header {
+    border-bottom: 1px solid #ccc; }
   .theExperience .card .card-header, .theEducation .card .card-header, .theSpeaking .card .card-header {
     box-shadow: none;
     border-bottom: 1px solid #ccc; }
+
+.theExperience .card.box, .theEducation .card.box {
+  padding: 20px 0; }
+
+.theSpeaking .talk-mini {
+  margin-bottom: 1rem; }
+  .theSpeaking .talk-mini .card-header {
+    border: none;
+    box-shadow: none; }
 
 .theSkills .card {
   box-shadow: none;
