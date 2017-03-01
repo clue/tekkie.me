@@ -10,7 +10,7 @@ conference:
   link: https://2016.musiccitycode.com/
   logo: assets/talks/php-uk-2016.png
 year: 2016
-slides_embed: 
+slides_embed: <script async class="speakerdeck-embed" data-id="c65b534d33674814bed9237fded7963e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 description: High availability is becoming a de-facto requirement of today's applications. Customer-facing IT failures mean directly losing customer revenue and trust, yet there are no textbook solutions to achieving five 9s availability. Silos are a clever method of grouping servers in such a way that they can be scaled both horizontally and vertically, depending on the actual application needs.
 
