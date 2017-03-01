@@ -1,6 +1,8 @@
 #!/bin/bash
 
 REMOTE_ROOT="/var/www/tekkie.me"
+REMOTE_IP="5.9.45.114"
+REMOTE_USER="hosting"
 
 echo "========================="
 echo "= tekkie.me deployer    ="
@@ -22,7 +24,7 @@ echo "... remove unneeded files"
 rm -rf output_prod/themes/tekkie/cv/node_modules
 
 echo "... create archive"
-zip -r $PACKAGE output_prod -q
+zip -r $PACKAGE output_prod -q # -q for "quiet"
 
 echo "... done!"
 
@@ -34,17 +36,16 @@ scp $PACKAGE hosting@5.9.45.114:$REMOTE_ROOT
 echo
 echo "Step 3: INSTALL"
 echo "... unpack to "
-ssh hosting@5.9.45.114 "cd $REMOTE_ROOT; pwd; unzip $LATEST_TAG.zip; mv output_prod $LATEST_TAG"
-
-echo "... ^^ was executed on the remote server!"
-
-echo "TODO: move prod symlink to new folder"
+ssh $REMOTE_USER@$REMOTE_IP "cd $REMOTE_ROOT; pwd; unzip $LATEST_TAG.zip; mv output_prod $LATEST_TAG"
+ssh $REMOTE_USER@$REMOTE_IP "cd $REMOTE_ROOT; mv main old; ln -s $LATEST_TAG main"
 
 echo
 echo "Step 4: CHECK"
 
-echo "TODO curl homepage and check it renders"
+HOMEPAGE_STATUS=$(curl -sL -w "%{http_code}\\n" "https://tekkie.me/" -o /dev/null)
+echo "... check homepage HTTP status: $HOMEPAGE_STATUS"
 
 echo
-echo "Step 5: CLOSE"
-echo "... bye!"
+echo "Step 5: CLEANUP"
+rm -rf $PACKAGE
+echo "... removed local archive; bye!"
