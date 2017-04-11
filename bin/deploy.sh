@@ -35,8 +35,8 @@ scp $PACKAGE hosting@5.9.45.114:$REMOTE_ROOT
 
 echo
 echo "Step 3: INSTALL"
-echo "... unpack to "
-ssh $REMOTE_USER@$REMOTE_IP "cd $REMOTE_ROOT; pwd; unzip $LATEST_TAG.zip; mv output_prod $LATEST_TAG"
+echo "... unpack to $REMOTE_ROOT"
+ssh $REMOTE_USER@$REMOTE_IP "cd $REMOTE_ROOT; pwd; unzip -q $LATEST_TAG.zip; mv output_prod $LATEST_TAG"
 ssh $REMOTE_USER@$REMOTE_IP "cd $REMOTE_ROOT; mv main old; ln -s $LATEST_TAG main"
 
 echo
